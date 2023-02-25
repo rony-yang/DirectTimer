@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/secMilli">
+    <TextView
+        android:id="@+id/secText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="130sp" />
+
+    <TextView
+        android:id="@+id/milliText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/secText"
+        android:layout_marginLeft="11dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toRightOf="@+id/secText"
+        android:text="00"
+        android:textSize="40dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/secMilli"
+        android:layout_marginTop="100dp">
+
+    <ImageButton
+        android:id="@+id/btnStop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:src="@drawable/stop"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:background="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/btnReturn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        android:src="@drawable/back"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:background="@color/white"/>
+    </LinearLayout>
+
+</RelativeLayout>
